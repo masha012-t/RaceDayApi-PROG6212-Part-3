@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  racedayapi:
+    image: racedayapi
+    build:
+      context: ./RaceDayApi
+      dockerfile: Dockerfile
+    ports:
+      - "7137:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+
+  racedayweb:
+    image: racedayweb
+    build:
+      context: ./RaceDayWeb
+      dockerfile: Dockerfile
+    ports:
+      - "7283:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      - racedayapi

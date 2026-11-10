@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Docker-Compose.txt" />
+  </Folder>
+  <Project Path="RaceDayApi.Tests/RaceDayApi.Tests.csproj" Id="eddffc0a-96ac-4dd4-9486-c2675886ab8f" />
+  <Project Path="RaceDayApi/RaceDayApi.csproj" />
+  <Project Path="RaceDayWeb/RaceDayWeb.csproj" Id="b84045f0-cd26-4cf4-8f14-eb9a4c5623e3" />
+</Solution>
